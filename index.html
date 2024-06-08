@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>マインスイーパー</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 1100px;
+        margin: 20px auto;
+      }
+
+      h1 {
+        margin: 20px 0;
+      }
+
+      .f {
+        display: flex;
+        gap: 30px;
+      }
+
+      .btn button {
+        display: block;
+        width: 100px;
+        margin-bottom: 10px;
+      }
+
+      #canvas_div {
+        flex: 1;
+        position: relative;
+      }
+
+      #p5_loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>マインスイーパー</h1>
+      <div class="f">
+        <div class="btn">
+          <button id="b1">初級</button>
+          <button id="b2">中級</button>
+          <button id="b3">上級</button>
+        </div>
+        <div id="canvas_div"></div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
